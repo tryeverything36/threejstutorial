@@ -23,10 +23,15 @@ const material = new THREE.MeshStandardMaterial({ color: 0x00ff99 });
 const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
-// Light
-const light = new THREE.DirectionalLight(0xffffff, 1);
-light.position.set(5, 5, 5);
-scene.add(light);
+
+// Lights
+const mainLight = new THREE.DirectionalLight(0xffffff, 1);
+mainLight.position.set(5, 5, 5);
+scene.add(mainLight);
+
+const fillLight = new THREE.AmbientLight(0xffffff, 0.3);
+scene.add(fillLight);
+
 
 // Animate loop
 function animate() {

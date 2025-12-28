@@ -1,0 +1,14 @@
+{
+  "description": "Vite Three.js project",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "npx vite --host",
+    "build": "npx vite build"
+  },
+  "dependencies": {
+    "three": "^0.182.0"
+  },
+  "devDependencies": {
+    "vite": "^7.3.0"
+  }
+}
